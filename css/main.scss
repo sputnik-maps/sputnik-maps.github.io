@@ -1,0 +1,32 @@
+---
+# Theme style
+---
+
+@charset "utf-8";
+
+$footer-height: 35px;
+
+body {
+	padding-top: 50px;
+}
+
+html, body {
+	height: 100%;
+}
+
+#page-container {
+	min-height: calc(100% - #{$footer-height});
+}
+
+.footer {
+	text-align: center;
+	padding-bottom: 15px;
+	height: $footer-height;
+	box-sizing: border-box;
+}
+
+@import
+	"variables",
+	"bootstrap",
+	"bootswatch"
+;

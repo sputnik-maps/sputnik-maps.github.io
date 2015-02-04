@@ -1,0 +1,15 @@
+# Site settings
+title: Sputnik.Maps GitHub
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://sputnik-maps.github.io"
+
+# Syntax highlighting
+highlighter: pygments
+
+# Build settings
+markdown: redcarpet
+extensions: [fenced_code_blocks]
+sass:
+    sass_dir: _sass
+    style: compressed
