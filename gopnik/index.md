@@ -4,7 +4,7 @@ title: Gopnik
 group: projects
 ---
 
-#Gopnik
+# Gopnik
 
 **Gopnik** is a tile server and a render for [slippy map](http://wiki.openstreetmap.org/wiki/Slippy_map) based on [mapnik](http://mapnik.org/) library.
 It's like [mod_tile](http://wiki.openstreetmap.org/wiki/Mod_tile) + renderd.
@@ -32,3 +32,6 @@ Code is unstable. Current status of Gopnik is something like developer preview. 
  * [Configuration](configuration.html)
  * [Default plugins](defplugins.html)
  * [Utils](utils.html)
+
+## Sources
+ * [github.com/sputnik-maps/gopnik](https://github.com/sputnik-maps/gopnik)
