@@ -9,7 +9,8 @@ highlighter: pygments
 
 # Build settings
 markdown: redcarpet
-extensions: [fenced_code_blocks]
+redcarpet:
+    extensions: [fenced_code_blocks, tables]
 sass:
     sass_dir: _sass
     style: compressed

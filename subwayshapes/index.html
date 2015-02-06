@@ -1,0 +1,46 @@
+---
+layout: page
+title: Subwayshapes
+group: projects
+---
+
+<style type="text/css">
+	#map {
+		height: 350px;
+	}
+</style>
+
+<h1>Subwayshapes</h1>
+
+<p>Here you can find the shape files with subway lines for all underground systems
+of cities over former Soviet Union area (the name of the file corresponds to a
+city subway system) – Russia, Ukraine, Belarus, Armenia, Kazakhstan,
+Uzbekistan, Georgia.</p>
+
+<p>In contrast to OSM data, our shape files support single-track subway lines
+whereas OSM provides two tracks for each subway line. Sometimes it causes
+inconvenience for users especially then you don't want to overload your map
+with additional data.</p>
+
+<p>You can easily change the attributes of the files (for ex. color, opacity,
+texture etc.) for different visualization needs.</p>
+
+<p>Licensed under ODbL. See LICENSE.</p>
+
+<p>
+	<div id="map"></div>
+<p>
+
+<p>More examples <a href="https://github.com/sputnik-maps/subwayshapes/tree/master/geojson">here</a>.</p>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script type="text/javascript">
+	var map = L.map('map').setView([59.929388, 30.332909], 12);
+
+	L.tileLayer('http://tiles.maps.sputnik.ru/{z}/{x}/{y}.png', {
+		attribution: ' © <a href="http://sputnik.ru">Спутник</a> | © <a href="http://www.openstreetmap.org/copyright">Openstreetmap</a>',
+		minZoom: 3,
+		maxZoom: 18
+	}).addTo(map);
+</script>

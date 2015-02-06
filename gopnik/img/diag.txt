@@ -1,0 +1,19 @@
+title Render
+
+note over User,Dispatcher,Cache,Render: Tile in cache
+User -> Dispatcher: request
+Dispatcher -> Cache: check cache
+note right of Cache: tile found
+Cache -> Dispatcher: tile
+Dispatcher -> User: tile
+
+note over User,Dispatcher,Cache,Render: Tile not in cache
+User -> Dispatcher: request
+Dispatcher -> Cache: check cache
+note right of Cache: tile not found
+Cache -> Dispatcher: nil
+Dispatcher -> Render: rendering request
+Render -> Cache: metatile
+Render -> Dispatcher: tile
+Dispatcher -> User: tile
+

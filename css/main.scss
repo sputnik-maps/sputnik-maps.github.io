@@ -28,5 +28,11 @@ html, body {
 @import
 	"variables",
 	"bootstrap",
-	"bootswatch"
+	"bootswatch",
+	"pygments"
 ;
+
+table {
+	@extend .table;
+	@extend .table-condensed;
+}
