@@ -15,11 +15,13 @@ title: Gopnik installation
  * [github.com/martini-contrib/staticbin](https://github.com/martini-contrib/staticbin/)
  * [github.com/op/go-logging](https://github.com/op/go-logging/)
  * [github.com/orofarne/hmetrics2](https://github.com/orofarne/hmetrics2/)
- * [github.com/orofarne/hmetrics2/expvarexport](https://github.com/orofarne/hmetrics2/expvarexport/)
  * [github.com/orofarne/hmetrics2-graphite](https://github.com/orofarne/hmetrics2-graphite/)
  * [github.com/orofarne/strict-json](https://github.com/orofarne/strict-json/)
  * [github.com/yosssi/rendergold](https://github.com/yosssi/rendergold/)
  * [gopkg.in/check.v1](https://labix.org/gocheck)
+ * [github.com/jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata)
+ * [github.com/golang/protobuf](https://github.com/golang/protobuf)
+ * [code.google.com/p/freetype-go](https://code.google.com/p/freetype-go/)
 
 The easiest way to get it is to setup [GOPATH](https://golang.org/doc/code.html#GOPATH) and use [go get](https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies) utility.
 
