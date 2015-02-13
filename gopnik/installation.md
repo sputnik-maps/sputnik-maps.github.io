@@ -21,7 +21,7 @@ title: Gopnik installation
  * [gopkg.in/check.v1](https://labix.org/gocheck)
  * [github.com/jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata)
  * [github.com/golang/protobuf/{proto,protoc-gen-go}](https://github.com/golang/protobuf)
- * [code.google.com/p/freetype-go](https://code.google.com/p/freetype-go/)
+ * [code.google.com/p/freetype-go/freetype](https://code.google.com/p/freetype-go/)
 
 The easiest way to get it is to setup [GOPATH](https://golang.org/doc/code.html#GOPATH) and use [go get](https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies) utility.
 
