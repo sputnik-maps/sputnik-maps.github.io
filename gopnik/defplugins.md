@@ -107,11 +107,12 @@ Exports metrics over [graphite](http://graphite.wikidot.com/) protocol.
 
 Cache plugin that stores tiles in key-value backend.
 
- Name            | Type             | Default value | Description
- --------------- | ---------------- | ------------- | --------------------------------------------------
- Backend         | app.PluginConfig | nil           | Key-value storage backend
- UseMultilevel   | bool             | false         | Optimize one-color tiles (e.g. water, forest, etc)
- Prefix          | string           | ""            | Key prefix
+ Name                | Type             | Default value | Description
+ ------------------- | ---------------- | ------------- | --------------------------------------------------
+ Backend             | app.PluginConfig | nil           | Key-value storage backend
+ UseMultilevel       | bool             | false         | Optimize one-color tiles (e.g. water, forest, etc)
+ UseSecondLevelCache | bool             | false         | Cache one-color pngs in dispatchers memory
+ Prefix              | string           | ""            | Key prefix
 
 ## memorykv
 
