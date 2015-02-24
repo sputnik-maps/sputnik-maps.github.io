@@ -19,6 +19,7 @@ title: Gopnik installation
  * [github.com/orofarne/strict-json](https://github.com/orofarne/strict-json/)
  * [github.com/yosssi/rendergold](https://github.com/yosssi/rendergold/)
  * [gopkg.in/check.v1](https://labix.org/gocheck)
+ * [github.com/stretchr/testify](https://github.com/stretchr/testify)
  * [github.com/jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata)
  * [github.com/golang/protobuf/{proto,protoc-gen-go}](https://github.com/golang/protobuf)
  * [code.google.com/p/freetype-go/freetype](https://code.google.com/p/freetype-go/)
