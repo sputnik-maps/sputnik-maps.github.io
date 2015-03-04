@@ -33,5 +33,9 @@ Code is unstable. Current status of Gopnik is something like developer preview. 
  * [Default plugins](defplugins.html)
  * [Utils](utils.html)
 
+## Licese
+ * Code available under BSD 2-Clause License
+ * See full text [here](https://github.com/sputnik-maps/gopnik/blob/master/LICENSE)
+
 ## Sources
  * [github.com/sputnik-maps/gopnik](https://github.com/sputnik-maps/gopnik)
