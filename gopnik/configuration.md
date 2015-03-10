@@ -98,8 +98,8 @@ Dispatcher parameters:
 
  Name      | Type             | Default value | Description
  --------- | ---------------- | ------------- | ----------------------------------
- DebugAddr | string           | ":8088"       | Address for monitoring
- UIAddr    | string           | ":8097"       | WebUI address
+ DebugAddr | string           | ":8097"       | Address for monitoring
+ UIAddr    | string           | ":8088"       | WebUI address
  Threads   | int              | 1             | set GOMAXPROCS to Threads. -1 for NumCPU
  Logging   | json.RawMessage  | nil           | see logging section below
  PerfLog   | string           | ""            | Performance log file
