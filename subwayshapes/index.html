@@ -6,7 +6,7 @@ group: projects
 
 <style type="text/css">
 	#map {
-		height: 350px;
+		height: 550px;
 	}
 </style>
 
@@ -39,14 +39,11 @@ texture etc.) for different visualization needs.</p>
 	<li><a href="https://github.com/sputnik-maps/subwayshapes">github.com/sputnik-maps/subwayshapes</a></li>
 </ul>
 
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<script type="text/javascript">
-	var map = L.map('map').setView([59.929388, 30.332909], 12);
+<link rel="stylesheet" href="http://js-api.maps.sputnik.ru/v0.3/sputnik_maps_bundle.min.css" />
+<script src="http://js-api.maps.sputnik.ru/v0.3/sputnik_maps_bundle.min.js"></script>
 
-	L.tileLayer('http://tiles.maps.sputnik.ru/{z}/{x}/{y}.png', {
-		attribution: ' © <a href="http://sputnik.ru">Спутник</a> | © <a href="http://www.openstreetmap.org/copyright">Openstreetmap</a>',
-		minZoom: 3,
-		maxZoom: 18
-	}).addTo(map);
+
+<script type="text/javascript">
+	L.sm.apiKey = '1RBAGxOW2wm3';
+	L.sm.map('map').setView([59.929388, 30.332909], 13);
 </script>
