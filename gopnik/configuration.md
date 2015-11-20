@@ -36,9 +36,6 @@ One config can be used for all daemons and utilities, or separate configs can be
 	"Prerender": {
 		"..."
 	},
-	"PrerenderSlave": {
-		"..."
-	},
 
 	"#Common configuration": null,
 	"MetaSize": 8,
@@ -87,34 +84,24 @@ Dispatcher parameters:
  ---------------- | ---------------- | ------------- | ---------------------------------------------------------------
  Addr             | string           | ":8090"       | Main address
  DebugAddr        | string           | ":9090"       | Address for monitoring
- HTTPReadTimeout  | string           | "60s"         | HTTP client read timeout
- HTTPWriteTimeout | string           | "60s"         | HTTP client write timeout
  Threads          | int              | 1             | set GOMAXPROCS to Threads. -1 for NumCPU
  HotCacheDelay    | string           | "0s"          | Time period after cache set is done and before hot cache drop
  Logging          | json.RawMessage  | nil           | see logging section below
+ PerfLog          | string           | ""            | Performance log file
 
 
 ## Prerender
 
- Name      | Type             | Default value | Description
- --------- | ---------------- | ------------- | ----------------------------------
- DebugAddr | string           | ":8097"       | Address for monitoring
- UIAddr    | string           | ":8088"       | WebUI address
- Threads   | int              | 1             | set GOMAXPROCS to Threads. -1 for NumCPU
- Logging   | json.RawMessage  | nil           | see logging section below
- PerfLog   | string           | ""            | Performance log file
- Slaves    | app.PluginConfig | nil           | Cluster of slaves
-
-## PrerenderSlave
-
- Name          | Type             | Default value | Description
- ------------- | ---------------- | ------------- | ----------------------------------
- RPCAddr       | string           | ":8095"       | RPC address
- DebugAddr     | string           | ":8096"       | Address for monitoring
- SaverPoolSize | int              | _NumCPU_      | Size of savers pool
- Threads       | int              | 1             | set GOMAXPROCS to Threads. -1 means NumCPU
- Logging       | json.RawMessage  | nil           | see logging section below
- PerfLog       | string           | ""            | Performance log file
+ Name           | Type             | Default value | Description
+ -------------- | ---------------- | ------------- | ----------------------------------
+ DebugAddr      | string           | ":8097"       | Address for monitoring
+ UIAddr         | string           | ":8088"       | WebUI address
+ Threads        | int              | 1             | set GOMAXPROCS to Threads. -1 for NumCPU
+ Logging        | json.RawMessage  | nil           | see logging section below
+ PerfLog        | string           | ""            | Performance log file
+ Slaves         | app.PluginConfig | nil           | Cluster of slaves
+ RequestTimeout | string           | "1h"          | Timeout for request to gopnik
+ NodeQueueSize  | int              | 100           | Number of parallel requests per node
 
 ## Plugins
 
@@ -141,15 +128,17 @@ RenderPools section is a list of different renders configuration.
 Gopnik will use first relevant render from top.
 Each render pool is discribed by the following parameters:
 
- Name      | Type     | Default value  | Description
- --------  | -------- | -------------- | --------------------------------------------------------
- Cmd       | []string | nil            | Slave render command line. See details below
- MinZoom   | uint     | 0              | Minimum allowed zoom
- MaxZoom   | uint     | 0              | Maximum allowed zoom
- Tags      | []string | nil            | Render to be used only when request have _all_ tags from list
- PoolSize  | uint     | 0              | Number of render instances
- QueueSize | uint     | 0              | Size of task queue
- RenderTTL | uint     | 0              | Restart render after RenderTTL completed tasks
+ Name             | Type     | Default value  | Description
+ ---------------  | -------- | -------------- | --------------------------------------------------------
+ Cmd              | []string | nil            | Slave render command line. See details below
+ MinZoom          | uint     | 0              | Minimum allowed zoom
+ MaxZoom          | uint     | 0              | Maximum allowed zoom
+ Tags             | []string | nil            | Render to be used only when request have _all_ tags from list
+ PoolSize         | uint     | 0              | Number of render instances
+ HPQueueSize      | uint     | 0              | Size of high priority task queue
+ LPQueueSize      | uint     | 0              | Size of task low priority queue
+ RenderTTL        | uint     | 0              | Restart render after RenderTTL completed tasks
+ ExecutionTimeout | string   | ""             | Timeout for one request
 
 ## Slave options
 
@@ -163,6 +152,7 @@ Command line options for default render slave:
  -fontsPath   | []string  | nil            | List of font paths
  -pluginsPath | string    | nil            | Mapnik plugins path
  -scaleFactor | float64   | 1.0            | Scale factor. Commonly equals _(slave tile size) / (gopnik's tile size)_
+ -imageFormat | string    | "png8"         | Mapnik image format (e.g. "png8" or "png24")
 
 ## Logging
 

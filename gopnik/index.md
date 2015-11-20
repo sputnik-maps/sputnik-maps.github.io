@@ -17,7 +17,7 @@ Code is unstable. Current status of Gopnik is something like developer preview. 
  * tags on request, tag filtering
  * support for multiple different styles and rendering options for different zooms and tags
  * distributed render balancer
- * storage and discovery plugins
+ * pluggable storage modules
  * full support of eventually consistent storages
  * some nice utils
 

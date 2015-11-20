@@ -22,9 +22,15 @@ title: Gopnik installation
  * [github.com/stretchr/testify](https://github.com/stretchr/testify)
  * [github.com/jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata)
  * [github.com/golang/protobuf/{proto,protoc-gen-go}](https://github.com/golang/protobuf)
- * [code.google.com/p/freetype-go/freetype](https://code.google.com/p/freetype-go/)
+ * [github.com/orofarne/freetype-go/freetype](github.com/orofarne/freetype-go/freetype)
+ * [git.apache.org/thrift.git/lib/go/thrift](https://thrift.apache.org/)
 
-The easiest way to get it is to setup [GOPATH](https://golang.org/doc/code.html#GOPATH) and use [go get](https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies) utility.
+The easiest way to get it is to use [gom](https://github.com/mattn/gom).
+
+```bash
+go get github.com/mattn/gom
+gom install
+```
 
 ## C++ tools and libraries
  * [cmake](http://www.cmake.org/)
@@ -34,8 +40,8 @@ The easiest way to get it is to setup [GOPATH](https://golang.org/doc/code.html#
 
 ## Build
 ```bash
-./bootstrap.bash
-./build.bash
+gom exec ./bootstrap.bash
+gom exec ./build.bash
 ```
 
 ## External plugins

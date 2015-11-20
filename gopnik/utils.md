@@ -35,14 +35,16 @@ Accepts a plan (see _gopnikprerenderimport_) and a config in the following forma
 
 Config parameters:
 
- Name        | Type             | Default value | Description
- ----------- | ---------------- | ------------- | ----------------------------------------------------------------------
- UIAddr      | string           | ":8088"       | WebUI address
- DebugAddr   | string           | ":8097"       | Address for monitoring
- Threads     | int              | 1             | set GOMAXPROCS to Threads. -1 means NumCPU
- Logging     | json.RawMessage  | nil           | Logging options. See [configuration](configuration.html) for details
- PerfLog     | string           | ""            | Performance log file
- Slaves      | app.PluginConfig | nil           | Cluster of slaves
+ Name           | Type             | Default value | Description
+ -------------- | ---------------- | ------------- | ----------------------------------
+ DebugAddr      | string           | ":8097"       | Address for monitoring
+ UIAddr         | string           | ":8088"       | WebUI address
+ Threads        | int              | 1             | set GOMAXPROCS to Threads. -1 for NumCPU
+ Logging        | json.RawMessage  | nil           | Logging options. See [configuration](configuration.html) for details
+ PerfLog        | string           | ""            | Performance log file
+ Slaves         | app.PluginConfig | nil           | Cluster of slaves
+ RequestTimeout | string           | "1h"          | Timeout for request to gopnik
+ NodeQueueSize  | int              | 100           | Number of parallel requests per node
 
 ## gopnikcopy
 
