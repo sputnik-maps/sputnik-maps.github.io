@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Gopnik
-group: projects
 ---
 
 # Gopnik storage plugin
