@@ -3,5 +3,5 @@ layout: page
 title: Gopnik
 ---
 
-# Gopnik storage plugin
+# Gopnik storage plugins
  * [couchbase-kv](https://github.com/sputnik-maps/gopnik-couchbase-kv)
