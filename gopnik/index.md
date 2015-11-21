@@ -38,3 +38,6 @@ Code is unstable. Current status of Gopnik is something like developer preview. 
 
 ## Sources
  * [github.com/sputnik-maps/gopnik](https://github.com/sputnik-maps/gopnik)
+
+## Plugins
+ * [Plugins](plugins.html)
