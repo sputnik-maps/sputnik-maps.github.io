@@ -4,7 +4,7 @@ title: MVT Styler
 group: projects
 ---
 
-# MVT STyler
+# MVT Styler
 
 MVT Styler is an editor of vector styles for interactive maps. 
 
