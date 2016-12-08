@@ -14,7 +14,14 @@ Style specification developed by &copy;MapBox: [Mapbox GL Style](https://www.map
 
 ## Quick Start
 
-Make sure you have sqlite3 installed on your system.
+Make sure you have `sqlite3` installed on your system.
+
+Get code at https://github.com/sputnik-maps/mvt-styler
+
+```bash
+git clone https://github.com/sputnik-maps/mvt-styler.git
+```
+
 
 ## Build project
 
