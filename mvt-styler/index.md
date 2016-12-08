@@ -8,8 +8,9 @@ group: projects
 
 MVT Styler is an editor of vector styles for interactive maps. 
 
-Style specification developed by &copy;MapBox: [Mapbox GL Style](https://www.mapbox.com/mapbox-gl-style-spec/)  
- 
+Style specification developed by &copy;MapBox: [Mapbox GL Style](https://www.mapbox.com/mapbox-gl-style-spec/)
+  
+![](style_example.png) 
 
 ## Quick Start
 
