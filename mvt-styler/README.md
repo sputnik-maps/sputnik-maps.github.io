@@ -27,7 +27,8 @@ Make sure you have sqlite3 installed on your system.
 ./run.sh
 ```
 
-For UI-development cycle
+### For UI-development cycle
+
 ```bash
 ./dev.sh
 ```
@@ -39,12 +40,11 @@ For UI-development cycle
 ## Building fonts 
 
 Copy fonts files to ./fonts folder. Then:
-```bash
 
+```bash
 cd fonts
 npm install
 ./build.sh
-
 ```
 
 That's it!
