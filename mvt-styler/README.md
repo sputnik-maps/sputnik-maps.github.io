@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gopnik
+title: MVT Styler
 group: projects
 ---
 
