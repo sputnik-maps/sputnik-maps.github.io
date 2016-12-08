@@ -33,7 +33,9 @@ Make sure you have sqlite3 installed on your system.
 ```bash
 ./dev.sh
 ```
-## Uninstalling NPM nodules
+
+## Uninstalling NPM modules
+
 ```bash
 ./uninstall.sh
 ```
