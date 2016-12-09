@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://sputnik-maps.github.io"
 
 # Syntax highlighting
-highlighter: pygments
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
